@@ -8,7 +8,7 @@ class MyApp(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-        self.ui.btn_gene.clicked.connect(self.call_api_gen_key)
+        self.ui.btn_gen.clicked.connect(self.call_api_gen_key)
         self.ui.btn_encrypt.clicked.connect(self.call_api_encrypt)
         self.ui.btn_decrypt.clicked.connect(self.call_api_decrypt)
         self.ui.btn_sign.clicked.connect(self.call_api_sign)
